@@ -159,7 +159,7 @@ img {
 
 .lang-switch{
     position:relative;
-	left: 220px;
+	left: 205px;
 	top: -66px;
 	z-index: 1005 !important;
 	padding-left:8px;
@@ -169,7 +169,7 @@ img {
 }
 .lang-switch a{
 	color: #fff;
-	font-size:23px;
+	font-size:22px;
 }
 .not-active {
    pointer-events: none;
