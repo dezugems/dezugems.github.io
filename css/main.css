@@ -4,9 +4,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
     margin: 0px;
     padding: 0px;
 }
-a:hover, a:focus {
-    color: #0078A0;
-}
+
 .inline-list > li > * {
     display: block;
 }
@@ -14,7 +12,6 @@ a:hover {
     cursor: pointer;
 }
 a {
-    color: #008CBA;
     text-decoration: none;
     line-height: inherit;
 }
@@ -86,17 +83,23 @@ img {
 }
 
 .cd-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100px;
   background-color:#333;
+  z-index:1018;
+  
+  
  
 }
-
+.desktop-nav{
+	display:none;
+}
 .cd-primary-nav {
   /* mobile first - navigation hidden by default, triggered by tap/click on navigation icon */
+  display:block;
   float: right;
   margin-right: 5%;
   width: 94px;
@@ -136,7 +139,7 @@ img {
   font-weight: 400;
   line-height: 80px;
   padding-left: 5%;
-  background: rgba(3, 3, 3, 0.8);
+  background-color:#333;
   border-top: 1px solid #A9A9A9;
   color: #878787;
   
@@ -185,12 +188,6 @@ img {
 }
   
   
-  
-  
-  
-  
-  
-  
   @media only screen and (min-width: 768px) {
     .cd-primary-nav {
   
@@ -204,19 +201,71 @@ img {
   
 }
 .cd-primary-nav ul.is-visible {
-  -webkit-transform: translateY(87px);
-  -moz-transform: translateY(87px);
-  -ms-transform: translateY(87px);
-  -o-transform: translateY(87px);
-  transform: translateY(87px);
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+}
+.lang-switch{
+	left:230px;
+}
+.lang-switch a{
+	font-size:23px;
 }
   }
   
   
   
  @media only screen and (min-width: 1170px) {
-   .cd-primary-nav: display:none;
+ .desktop-nav{
+    display:block;
+ 	position:absolute;
+ 	left:40%;
+ 	height:100px;
+ 	width:60%;
+ }
+ .logo{
+ 	width:15%;
+ }
+ .lang-switch{
+	left:15%;
+	width:5%;
+}
+ 
+ .nav-div{
+    width: 25%;
+	top:25%;
+	height: 50%;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	position: relative;
+	text-align:center;
+	float:left;
+	
+  
+   	
+ }
+ .main-content{
+	
+	width:86%;
+	left:7%;
+	
+}
+ .nav-div span{
+ 	position:relative;
+ 	top:7px;
+ 	color:#fff;
+ 	font-size:25px;
+}
+.cd-primary-nav {
+   display:none;
  } 
+ }
+ .nav-div:hover{
+ 	opacity:0.8;
+ }
+   
   
 .footer-distributed{
      background-color:#333;
