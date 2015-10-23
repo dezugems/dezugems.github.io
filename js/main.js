@@ -5,5 +5,6 @@ jQuery(document).ready(function($){
 		   $(this).children('ul').toggleClass('is-visible');
 		   
 	});
+	
 });
 

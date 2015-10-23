@@ -105,6 +105,7 @@ img {
   background-size: 74px 74px;
   z-index: 1019 !important;
   
+  
 }
 .cd-primary-nav ul {
   display:none;
@@ -146,6 +147,33 @@ img {
 	width:94%;
 	left:3%;
 	top:150px;
+	margin-bottom:250px;
+}
+.not-visible{
+	display:none;
+}
+
+.visible{
+	display:block;
+}
+
+.lang-switch{
+    position:relative;
+	left: 220px;
+	top: -66px;
+	z-index: 1005 !important;
+	padding-left:8px;
+	width:70px;
+	
+	color:gray;
+}
+.lang-switch a{
+	color: #fff;
+	font-size:23px;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
 }
 .title{
 	text-align:center;
